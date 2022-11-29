@@ -5,6 +5,7 @@ ctor(totalSeconds)
 start()
 stop()
 resume()
+event: timeTick
 
 Converter:
 convertToMinutes(seconds): string
