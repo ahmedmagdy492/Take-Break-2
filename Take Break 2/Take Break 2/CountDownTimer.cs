@@ -23,6 +23,8 @@ namespace Take_Break_2
             InitTimer();
         }
 
+        public bool IsStarted { get { return isStarted; } }
+
         private void InitTimer()
         {
             timer = new System.Windows.Forms.Timer();

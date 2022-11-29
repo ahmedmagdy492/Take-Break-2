@@ -1,0 +1,24 @@
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Take Break 2.exe
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Take Break 2.deps.json
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Take Break 2.runtimeconfig.json
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Take Break 2.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Take Break 2.pdb
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.csproj.AssemblyReference.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take_Break_2.ControlPanel.resources
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.csproj.GenerateResource.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.AssemblyInfoInputs.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.AssemblyInfo.cs
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.csproj.CoreCompileInputs.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.csproj.CopyComplete
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\refint\Take Break 2.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.pdb
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take Break 2.genruntimeconfig.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\ref\Take Break 2.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Nancy.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take_Break_2.Properties.Resources.resources
