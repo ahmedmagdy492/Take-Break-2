@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CcebAbkEf8E0xhg3yDoRx2hmOKpDOCy77QyojvsL9qNGKJRm4wAiICLH0CB3H5V64wbwBKyLvQrvDndJpFXImA==",
+  "dgSpecHash": "84zddwWRdHGfn2dvJiOzZKbMleZk/4FjfT8qvPpF+sAyFogR59heA4xLDwbNznftTfuqpct6p7BBOfyIqB5/Jw==",
   "success": true,
   "projectFilePath": "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ahmed\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
