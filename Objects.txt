@@ -1,0 +1,23 @@
+Objects:
+Countdown timer:
+totalSeconds
+ctor(totalSeconds)
+start()
+stop()
+resume()
+
+Converter:
+convertToMinutes(seconds): string
+convertToMinSecs(seconds): string
+
+Settings Loader:
+loadSetting(settingName): string
+saveSetting(settingName, value)
+
+WindowsApiHelper:
+toggleMeInStartup(): boolean
+
+Screens:
+Control Panel
+Settings
+Popup

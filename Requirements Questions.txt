@@ -1,0 +1,10 @@
+Questions:
+what is the main goal of developing this application?
+i want an application that notifies me every period of time to take a break by a sound and a notification on the screen
+
+what is the basic flow of the app?
+once the app has started it should start a count down timer from a certain predefined value and go all the way down to 0 then a popup should appear to the user indicating the break time. the countdown timer should be on sleep mode for a certain amount of time (can be modified by the user) and after this period is over the program should start all over again.
+
+
+how you want the app to be organized in terms of screens and the layout?
+2 screens the first one and the main one is the control panel which contains a settings button and the count down in front along with a button to stop or resume the count down timer and the second screen is the settings screen and this one should simply contain all the available settings for the user to modify and save them. the main style of the app is the modern style like the style used in antivirus programs.
