@@ -1,3 +1,4 @@
+using Take_Break_2.Helpers;
 using Take_Break_2.SettingLoader;
 
 namespace Take_Break_2
@@ -70,7 +71,7 @@ namespace Take_Break_2
 
         private void CountDownTimer_TimeTick(long elapsedSeconds)
         {
-            lblTimeLeft.Text = elapsedSeconds.ToString();
+            lblTimeLeft.Text = TimeConverter.ConvertSecondsToReadableFormat(elapsedSeconds);
         }
     }
 }
