@@ -35,7 +35,8 @@ namespace Take_Break_2
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-
+            SettingsForm settingsForm = new SettingsForm();
+            settingsForm.ShowDialog();
         }
 
         private void ControlPanel_Load(object sender, EventArgs e)
@@ -54,6 +55,10 @@ namespace Take_Break_2
             if(globalSettings.Startup == true)
             {
                 WindowsApiHelper.AddMeToStartup(Environment.ProcessPath);
+            }
+            else
+            {
+                WindowsApiHelper.RemoveMeFromStartup(Environment.ProcessPath);
             }
         }
 

@@ -27,5 +27,14 @@ namespace Take_Break_2.Helpers
                 File.Copy(executablePath, fileName);
             }
         }
+
+        public static void RemoveMeFromStartup(string executablePath)
+        {
+            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Startup), Path.GetFileName(executablePath));
+            if (File.Exists(fileName))
+            {
+                File.Delete(fileName);
+            }
+        }
     }
 }

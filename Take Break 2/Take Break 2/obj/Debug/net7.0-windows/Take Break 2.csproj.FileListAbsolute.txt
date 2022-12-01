@@ -23,3 +23,4 @@ D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-wind
 D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Debug\net7.0-windows\Nancy.dll
 D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take_Break_2.Properties.Resources.resources
 D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take_Break_2.PopupScreen.resources
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Debug\net7.0-windows\Take_Break_2.SettingsForm.resources

@@ -45,7 +45,7 @@ namespace Take_Break_2.SettingLoader
             }
         }
 
-        public void SaveSettingItem(SettingModel settings)
+        public void SaveSettings(SettingModel settings)
         {
             EnsureSettingFileExists();
             using (StreamWriter sw = new StreamWriter(FILE_NAME))
