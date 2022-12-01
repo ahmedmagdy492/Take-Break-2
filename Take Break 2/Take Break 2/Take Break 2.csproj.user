@@ -4,5 +4,8 @@
     <Compile Update="ControlPanel.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PopupScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

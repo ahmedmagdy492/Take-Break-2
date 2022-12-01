@@ -16,15 +16,7 @@ namespace Take_Break_2
         private void btnExit_Click(object sender, EventArgs e)
         {
             countDownTimer.Dispose();
-            Application.Exit();
-        }
-
-        private void btnControlPanel_Click(object sender, EventArgs e)
-        {
-            if(!controlPanelPanel.Visible)
-            {
-                controlPanelPanel.Visible = true;
-            }
+            Environment.Exit(0);
         }
 
         private void btnToggleTimer_Click(object sender, EventArgs e)
@@ -73,6 +65,36 @@ namespace Take_Break_2
         private void CountDownTimer_TimeTick(long elapsedSeconds)
         {
             lblTimeLeft.Text = TimeConverter.ConvertSecondsToReadableFormat(elapsedSeconds);
+        }
+
+        private void ControlPanel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            notifyIcon1.Text = "Take break 2";
+            notifyIcon1.Icon = this.Icon;
+            notifyIcon1.ShowBalloonTip(1000, "Take break 2", "Take break 2 is working in the background", ToolTipIcon.Info);
+            this.Hide();
+        }
+
+        private void showWindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            countDownTimer.Dispose();
+            Environment.Exit(0);
+        }
+
+        private void btnCloseWindow_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
         }
     }
 }

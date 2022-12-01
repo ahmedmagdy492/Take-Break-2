@@ -28,54 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlPanel));
             this.btnControlPanel = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCloseWindow = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.controlPanelPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTimeLeft = new System.Windows.Forms.Label();
             this.btnToggleTimer = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.controlPanelPanel.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Controls.Add(this.btnControlPanel);
-            this.flowLayoutPanel1.Controls.Add(this.btnSettings);
-            this.flowLayoutPanel1.Controls.Add(this.btnExit);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(181, 573);
-            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // btnControlPanel
             // 
+            this.btnControlPanel.FlatAppearance.BorderSize = 0;
             this.btnControlPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnControlPanel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnControlPanel.Location = new System.Drawing.Point(3, 3);
+            this.btnControlPanel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnControlPanel.Location = new System.Drawing.Point(224, 12);
             this.btnControlPanel.Name = "btnControlPanel";
-            this.btnControlPanel.Size = new System.Drawing.Size(171, 79);
+            this.btnControlPanel.Size = new System.Drawing.Size(127, 44);
             this.btnControlPanel.TabIndex = 0;
             this.btnControlPanel.Text = "Home";
             this.btnControlPanel.UseVisualStyleBackColor = true;
-            this.btnControlPanel.Click += new System.EventHandler(this.btnControlPanel_Click);
             // 
             // btnSettings
             // 
+            this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSettings.Location = new System.Drawing.Point(3, 88);
+            this.btnSettings.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSettings.Location = new System.Drawing.Point(357, 12);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(171, 79);
+            this.btnSettings.Size = new System.Drawing.Size(127, 45);
             this.btnSettings.TabIndex = 1;
             this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = true;
@@ -83,11 +78,13 @@
             // 
             // btnExit
             // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.Location = new System.Drawing.Point(3, 173);
+            this.btnExit.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnExit.Location = new System.Drawing.Point(487, 14);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(171, 79);
+            this.btnExit.Size = new System.Drawing.Size(127, 41);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -95,97 +92,142 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.RosyBrown;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnCloseWindow);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.btnSettings);
+            this.panel1.Controls.Add(this.btnControlPanel);
             this.panel1.Controls.Add(this.lblTitle);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel1.Location = new System.Drawing.Point(181, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(993, 60);
+            this.panel1.Size = new System.Drawing.Size(1174, 77);
             this.panel1.TabIndex = 1;
+            // 
+            // btnCloseWindow
+            // 
+            this.btnCloseWindow.BackColor = System.Drawing.Color.Black;
+            this.btnCloseWindow.FlatAppearance.BorderColor = System.Drawing.Color.GreenYellow;
+            this.btnCloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseWindow.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCloseWindow.ForeColor = System.Drawing.Color.GreenYellow;
+            this.btnCloseWindow.Location = new System.Drawing.Point(872, 11);
+            this.btnCloseWindow.Name = "btnCloseWindow";
+            this.btnCloseWindow.Size = new System.Drawing.Size(153, 50);
+            this.btnCloseWindow.TabIndex = 2;
+            this.btnCloseWindow.Text = "Hide";
+            this.btnCloseWindow.UseVisualStyleBackColor = false;
+            this.btnCloseWindow.Click += new System.EventHandler(this.btnCloseWindow_Click);
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblTitle.Location = new System.Drawing.Point(6, 16);
+            this.lblTitle.BackColor = System.Drawing.Color.GreenYellow;
+            this.lblTitle.Font = new System.Drawing.Font("Vivaldi", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(3, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(281, 28);
+            this.lblTitle.Size = new System.Drawing.Size(179, 73);
             this.lblTitle.TabIndex = 3;
-            this.lblTitle.Text = "Take Break 2 - Control Panel";
+            this.lblTitle.Text = "TKBreak";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // notifyIcon1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Location = new System.Drawing.Point(936, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 61);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon1.BalloonTipText = "Take Break 2 is working in the background";
+            this.notifyIcon1.BalloonTipTitle = "Take Break 2";
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
+            this.notifyIcon1.Text = "Take break 2";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
-            // controlPanelPanel
+            // contextMenuStrip1
             // 
-            this.controlPanelPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.controlPanelPanel.Controls.Add(this.label1);
-            this.controlPanelPanel.Controls.Add(this.lblTimeLeft);
-            this.controlPanelPanel.Controls.Add(this.btnToggleTimer);
-            this.controlPanelPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlPanelPanel.Location = new System.Drawing.Point(181, 60);
-            this.controlPanelPanel.Name = "controlPanelPanel";
-            this.controlPanelPanel.Size = new System.Drawing.Size(993, 513);
-            this.controlPanelPanel.TabIndex = 2;
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showWindowToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(174, 52);
+            // 
+            // showWindowToolStripMenuItem
+            // 
+            this.showWindowToolStripMenuItem.Name = "showWindowToolStripMenuItem";
+            this.showWindowToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.showWindowToolStripMenuItem.Text = "Show Window";
+            this.showWindowToolStripMenuItem.Click += new System.EventHandler(this.showWindowToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(50, 50);
+            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label1.Location = new System.Drawing.Point(530, 171);
             this.label1.Margin = new System.Windows.Forms.Padding(50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 31);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 7;
             this.label1.Text = "Time Left";
             // 
             // lblTimeLeft
             // 
             this.lblTimeLeft.AutoSize = true;
             this.lblTimeLeft.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTimeLeft.Location = new System.Drawing.Point(265, 50);
+            this.lblTimeLeft.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblTimeLeft.Location = new System.Drawing.Point(535, 257);
             this.lblTimeLeft.Margin = new System.Windows.Forms.Padding(50);
             this.lblTimeLeft.Name = "lblTimeLeft";
             this.lblTimeLeft.Size = new System.Drawing.Size(104, 31);
-            this.lblTimeLeft.TabIndex = 5;
+            this.lblTimeLeft.TabIndex = 8;
             this.lblTimeLeft.Text = "00:00:00";
             // 
             // btnToggleTimer
             // 
             this.btnToggleTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToggleTimer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnToggleTimer.Location = new System.Drawing.Point(444, 25);
+            this.btnToggleTimer.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnToggleTimer.Location = new System.Drawing.Point(467, 323);
             this.btnToggleTimer.Margin = new System.Windows.Forms.Padding(25);
             this.btnToggleTimer.Name = "btnToggleTimer";
             this.btnToggleTimer.Size = new System.Drawing.Size(240, 79);
-            this.btnToggleTimer.TabIndex = 6;
+            this.btnToggleTimer.TabIndex = 9;
             this.btnToggleTimer.Text = "Start";
             this.btnToggleTimer.UseVisualStyleBackColor = true;
-            this.btnToggleTimer.Click += new System.EventHandler(this.btnToggleTimer_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 455);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1174, 118);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // ControlPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1174, 573);
-            this.Controls.Add(this.controlPanelPanel);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTimeLeft);
+            this.Controls.Add(this.btnToggleTimer);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.RosyBrown;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -193,28 +235,30 @@
             this.Name = "ControlPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Take Break 2 - Control Panel";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ControlPanel_FormClosing);
             this.Load += new System.EventHandler(this.ControlPanel_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.controlPanelPanel.ResumeLayout(false);
-            this.controlPanelPanel.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
         private Label lblTitle;
-        private Button button1;
-        private FlowLayoutPanel controlPanelPanel;
+        private Button btnCloseWindow;
         private Button btnControlPanel;
         private Button btnSettings;
         private Button btnExit;
+        private NotifyIcon notifyIcon1;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem showWindowToolStripMenuItem;
+        private ToolStripMenuItem exitToolStripMenuItem;
         private Label label1;
         private Label lblTimeLeft;
         private Button btnToggleTimer;
+        private PictureBox pictureBox1;
     }
 }
