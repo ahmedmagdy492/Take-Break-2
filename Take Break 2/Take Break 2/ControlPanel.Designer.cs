@@ -55,9 +55,10 @@
             this.btnControlPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnControlPanel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnControlPanel.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnControlPanel.Location = new System.Drawing.Point(224, 12);
+            this.btnControlPanel.Location = new System.Drawing.Point(308, 16);
+            this.btnControlPanel.Margin = new System.Windows.Forms.Padding(4);
             this.btnControlPanel.Name = "btnControlPanel";
-            this.btnControlPanel.Size = new System.Drawing.Size(127, 44);
+            this.btnControlPanel.Size = new System.Drawing.Size(175, 57);
             this.btnControlPanel.TabIndex = 0;
             this.btnControlPanel.Text = "Home";
             this.btnControlPanel.UseVisualStyleBackColor = true;
@@ -68,9 +69,10 @@
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSettings.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnSettings.Location = new System.Drawing.Point(357, 12);
+            this.btnSettings.Location = new System.Drawing.Point(491, 16);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(127, 45);
+            this.btnSettings.Size = new System.Drawing.Size(175, 58);
             this.btnSettings.TabIndex = 1;
             this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = true;
@@ -82,9 +84,10 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnExit.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnExit.Location = new System.Drawing.Point(487, 14);
+            this.btnExit.Location = new System.Drawing.Point(669, 19);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(127, 41);
+            this.btnExit.Size = new System.Drawing.Size(175, 53);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -102,8 +105,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1174, 77);
+            this.panel1.Size = new System.Drawing.Size(1614, 100);
             this.panel1.TabIndex = 1;
             // 
             // btnCloseWindow
@@ -113,9 +117,10 @@
             this.btnCloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseWindow.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCloseWindow.ForeColor = System.Drawing.Color.GreenYellow;
-            this.btnCloseWindow.Location = new System.Drawing.Point(872, 11);
+            this.btnCloseWindow.Location = new System.Drawing.Point(1199, 14);
+            this.btnCloseWindow.Margin = new System.Windows.Forms.Padding(4);
             this.btnCloseWindow.Name = "btnCloseWindow";
-            this.btnCloseWindow.Size = new System.Drawing.Size(153, 50);
+            this.btnCloseWindow.Size = new System.Drawing.Size(210, 65);
             this.btnCloseWindow.TabIndex = 2;
             this.btnCloseWindow.Text = "Hide";
             this.btnCloseWindow.UseVisualStyleBackColor = false;
@@ -126,11 +131,12 @@
             this.lblTitle.BackColor = System.Drawing.Color.GreenYellow;
             this.lblTitle.Font = new System.Drawing.Font("Vivaldi", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(3, 0);
+            this.lblTitle.Location = new System.Drawing.Point(4, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(179, 73);
+            this.lblTitle.Size = new System.Drawing.Size(246, 95);
             this.lblTitle.TabIndex = 3;
-            this.lblTitle.Text = "TKBreak";
+            this.lblTitle.Text = "Take Break";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // notifyIcon1
@@ -171,8 +177,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label1.Location = new System.Drawing.Point(530, 171);
-            this.label1.Margin = new System.Windows.Forms.Padding(50);
+            this.label1.Location = new System.Drawing.Point(755, 222);
+            this.label1.Margin = new System.Windows.Forms.Padding(69, 65, 69, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 31);
             this.label1.TabIndex = 7;
@@ -183,8 +189,8 @@
             this.lblTimeLeft.AutoSize = true;
             this.lblTimeLeft.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTimeLeft.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblTimeLeft.Location = new System.Drawing.Point(535, 257);
-            this.lblTimeLeft.Margin = new System.Windows.Forms.Padding(50);
+            this.lblTimeLeft.Location = new System.Drawing.Point(763, 334);
+            this.lblTimeLeft.Margin = new System.Windows.Forms.Padding(69, 65, 69, 65);
             this.lblTimeLeft.Name = "lblTimeLeft";
             this.lblTimeLeft.Size = new System.Drawing.Size(104, 31);
             this.lblTimeLeft.TabIndex = 8;
@@ -195,10 +201,10 @@
             this.btnToggleTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToggleTimer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnToggleTimer.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnToggleTimer.Location = new System.Drawing.Point(467, 323);
-            this.btnToggleTimer.Margin = new System.Windows.Forms.Padding(25);
+            this.btnToggleTimer.Location = new System.Drawing.Point(642, 420);
+            this.btnToggleTimer.Margin = new System.Windows.Forms.Padding(34, 32, 34, 32);
             this.btnToggleTimer.Name = "btnToggleTimer";
-            this.btnToggleTimer.Size = new System.Drawing.Size(240, 79);
+            this.btnToggleTimer.Size = new System.Drawing.Size(330, 103);
             this.btnToggleTimer.TabIndex = 9;
             this.btnToggleTimer.Text = "Start";
             this.btnToggleTimer.UseVisualStyleBackColor = true;
@@ -207,29 +213,31 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 455);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 549);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1174, 118);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(1614, 196);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
             // ControlPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1174, 573);
+            this.ClientSize = new System.Drawing.Size(1614, 745);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTimeLeft);
             this.Controls.Add(this.btnToggleTimer);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.RosyBrown;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ControlPanel";

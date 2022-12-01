@@ -5,7 +5,7 @@ namespace Take_Break_2
 {
     public partial class ControlPanel : Form
     {
-        private SettingModel globalSetting;
+        private SettingModel globalSettings;
         private CountDownTimer countDownTimer;
 
         public ControlPanel()
@@ -42,19 +42,24 @@ namespace Take_Break_2
         {
             // load settings
             SettingsLoader settingsLoader = new SettingsLoader();
-            globalSetting = settingsLoader.LoadSettings();
+            globalSettings = settingsLoader.LoadSettings();
 
             // start the countdown timer
-            countDownTimer = new CountDownTimer(globalSetting.TotalSeconds ?? 1800);
+            countDownTimer = new CountDownTimer(globalSettings.TotalSeconds ?? 1800);
             countDownTimer.TimeTick += CountDownTimer_TimeTick;
             countDownTimer.TimeFinish += CountDownTimer_TimeFinish;
             countDownTimer.Start();
             btnToggleTimer.Text = "Stop";
+
+            if(globalSettings.Startup == true)
+            {
+                WindowsApiHelper.AddMeToStartup(Environment.ProcessPath);
+            }
         }
 
         private void CountDownTimer_TimeFinish()
         {
-            PopupScreen popupScreen = new PopupScreen(globalSetting.WaitingTimeInSeconds ?? 900);
+            PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
             popupScreen.Show();
             popupScreen.FormClosed += (sender, e) =>
             {
