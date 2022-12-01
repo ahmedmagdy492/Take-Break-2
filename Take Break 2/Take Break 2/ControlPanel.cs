@@ -62,11 +62,12 @@ namespace Take_Break_2
 
         private void CountDownTimer_TimeFinish()
         {
-            // TODO:
-            // 1.show the popup form
-            // 2.start the waiting timer
-            // 3.after it finishes start countdown timer again
-            countDownTimer.Start();
+            PopupScreen popupScreen = new PopupScreen(globalSetting.WaitingTimeInSeconds ?? 900);
+            popupScreen.Show();
+            popupScreen.FormClosed += (sender, e) =>
+            {
+                countDownTimer.Start();
+            };
         }
 
         private void CountDownTimer_TimeTick(long elapsedSeconds)
