@@ -44,6 +44,7 @@
             this.lblTimeLeft = new System.Windows.Forms.Label();
             this.btnToggleTimer = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,8 +61,9 @@
             this.btnControlPanel.Name = "btnControlPanel";
             this.btnControlPanel.Size = new System.Drawing.Size(175, 57);
             this.btnControlPanel.TabIndex = 0;
-            this.btnControlPanel.Text = "Home";
+            this.btnControlPanel.Text = "Create ShortCut";
             this.btnControlPanel.UseVisualStyleBackColor = true;
+            this.btnControlPanel.Click += new System.EventHandler(this.btnControlPanel_Click);
             // 
             // btnSettings
             // 
@@ -69,7 +71,7 @@
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSettings.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnSettings.Location = new System.Drawing.Point(491, 16);
+            this.btnSettings.Location = new System.Drawing.Point(514, 16);
             this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(175, 58);
@@ -221,6 +223,18 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label2.Location = new System.Drawing.Point(15, 111);
+            this.label2.Margin = new System.Windows.Forms.Padding(69, 65, 69, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(282, 31);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Created By Ahmed Magdy";
+            // 
             // ControlPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
@@ -228,6 +242,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1614, 745);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTimeLeft);
@@ -237,6 +252,7 @@
             this.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.RosyBrown;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -268,5 +284,6 @@
         private Label lblTimeLeft;
         private Button btnToggleTimer;
         private PictureBox pictureBox1;
+        private Label label2;
     }
 }

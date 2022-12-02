@@ -24,7 +24,16 @@ namespace Take_Break_2.Helpers
             string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Startup), Path.GetFileName(executablePath));
             if (!File.Exists(fileName))
             {
-                File.Copy(executablePath, fileName);
+                File.CreateSymbolicLink(fileName, executablePath);
+            }
+        }
+
+        public static void CreateShortcutOnDesktop(string executablePath)
+        {
+            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), Path.GetFileName(executablePath));
+            if (!File.Exists(fileName))
+            {
+                File.CreateSymbolicLink(fileName, executablePath);
             }
         }
 

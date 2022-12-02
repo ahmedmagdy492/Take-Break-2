@@ -106,5 +106,10 @@ namespace Take_Break_2
         {
             this.Show();
         }
+
+        private void btnControlPanel_Click(object sender, EventArgs e)
+        {
+            WindowsApiHelper.CreateShortcutOnDesktop(Environment.ProcessPath);
+        }
     }
 }
