@@ -19,20 +19,6 @@ namespace Take_Break_2
             Environment.Exit(0);
         }
 
-        private void btnToggleTimer_Click(object sender, EventArgs e)
-        {
-            if(countDownTimer.IsStarted)
-            {
-                countDownTimer.Stop();
-                btnToggleTimer.Text = "Start";
-            }
-            else
-            { 
-                countDownTimer.Start();
-                btnToggleTimer.Text = "Stop";
-            }
-        }
-
         private void btnSettings_Click(object sender, EventArgs e)
         {
             SettingsForm settingsForm = new SettingsForm();
@@ -64,12 +50,30 @@ namespace Take_Break_2
 
         private void CountDownTimer_TimeFinish()
         {
-            PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
-            popupScreen.Show();
-            popupScreen.FormClosed += (sender, e) =>
+            if(globalSettings.SilentMode == null || globalSettings.SilentMode == false)
             {
+                PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
+                popupScreen.Show();
+                popupScreen.FormClosed += (sender, e) =>
+                {
+                    countDownTimer.Start();
+                };
+            }
+            else 
+            {
+                //SilentModeForm silentModeForm = new SilentModeForm();
+                //silentModeForm.Show();
+                //silentModeForm.FormClosed += (sender, e) =>
+                //{
+                //    countDownTimer.Start();
+                //};
+                var memStream = new MemoryStream();
+                Properties.Resources.takebreak2.CopyTo(memStream);
+                var soundBuffer = new SFML.Audio.SoundBuffer(memStream);
+                var sound = new SFML.Audio.Sound(soundBuffer);
+                sound.Play();
                 countDownTimer.Start();
-            };
+            }
         }
 
         private void CountDownTimer_TimeTick(long elapsedSeconds)
@@ -110,6 +114,20 @@ namespace Take_Break_2
         private void btnControlPanel_Click(object sender, EventArgs e)
         {
             WindowsApiHelper.CreateShortcutOnDesktop(Environment.ProcessPath);
+        }
+
+        private void btnToggleTimer_Click_1(object sender, EventArgs e)
+        {
+            if (countDownTimer.IsStarted)
+            {
+                countDownTimer.Stop();
+                btnToggleTimer.Text = "Start";
+            }
+            else
+            {
+                countDownTimer.Start();
+                btnToggleTimer.Text = "Stop";
+            }
         }
     }
 }

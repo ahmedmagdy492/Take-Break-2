@@ -1,0 +1,30 @@
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\Take Break 2.exe
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\Take Break 2.deps.json
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\Take Break 2.runtimeconfig.json
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\Take Break 2.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\Take Break 2.pdb
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\Newtonsoft.Json.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.csproj.AssemblyReference.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take_Break_2.ControlPanel.resources
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take_Break_2.PopupScreen.resources
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take_Break_2.Properties.Resources.resources
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take_Break_2.SettingsForm.resources
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.csproj.GenerateResource.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.AssemblyInfoInputs.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.AssemblyInfo.cs
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.csproj.CoreCompileInputs.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.csproj.CopyComplete
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\refint\Take Break 2.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.pdb
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.genruntimeconfig.cache
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\ref\Take Break 2.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\Take Break 2.dll.config
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\NAudio.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\NAudio.Asio.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\NAudio.Core.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\NAudio.Midi.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\NAudio.Wasapi.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\NAudio.WinForms.dll
+D:\Current_Projects\Take Break 2\Take Break 2\Take Break 2\bin\Release\net7.0-windows\NAudio.WinMM.dll

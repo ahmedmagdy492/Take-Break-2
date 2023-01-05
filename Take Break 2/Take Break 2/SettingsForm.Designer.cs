@@ -37,6 +37,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.chkBoxEnableSilentMode = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nmTotalMins)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmWaitingTime)).BeginInit();
             this.SuspendLayout();
@@ -117,7 +119,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(368, 296);
+            this.btnSave.Location = new System.Drawing.Point(368, 378);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(121, 51);
             this.btnSave.TabIndex = 5;
@@ -145,12 +147,38 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "mins";
             // 
+            // chkBoxEnableSilentMode
+            // 
+            this.chkBoxEnableSilentMode.AutoSize = true;
+            this.chkBoxEnableSilentMode.Location = new System.Drawing.Point(56, 311);
+            this.chkBoxEnableSilentMode.Name = "chkBoxEnableSilentMode";
+            this.chkBoxEnableSilentMode.Size = new System.Drawing.Size(232, 32);
+            this.chkBoxEnableSilentMode.TabIndex = 8;
+            this.chkBoxEnableSilentMode.Text = "Enable Silent Mode";
+            this.chkBoxEnableSilentMode.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(295, 299);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 58);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "New";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(531, 374);
+            this.ClientSize = new System.Drawing.Size(531, 467);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.chkBoxEnableSilentMode);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSave);
@@ -186,5 +214,7 @@
         private Button btnSave;
         private Label label3;
         private Label label4;
+        private CheckBox chkBoxEnableSilentMode;
+        private Button button1;
     }
 }

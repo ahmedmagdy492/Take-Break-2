@@ -28,6 +28,7 @@ namespace Take_Break_2
             nmTotalMins.Value = (decimal)_globalSettings.TotalSeconds / 60;
             nmWaitingTime.Value = (decimal)_globalSettings.WaitingTimeInSeconds / 60;
             checkBoxStartup.Checked = _globalSettings.Startup ?? false;
+            chkBoxEnableSilentMode.Checked = _globalSettings.SilentMode ?? false;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -37,6 +38,7 @@ namespace Take_Break_2
                 _globalSettings.TotalSeconds = (long)nmTotalMins.Value * 60;
                 _globalSettings.WaitingTimeInSeconds = (long)nmWaitingTime.Value * 60;
                 _globalSettings.Startup = checkBoxStartup.Checked;
+                _globalSettings.SilentMode = chkBoxEnableSilentMode.Checked;
 
                 _settingsLoader.SaveSettings(_globalSettings);
                 MessageBox.Show("Changes Saved Successfully and will be applied next time the application runs");

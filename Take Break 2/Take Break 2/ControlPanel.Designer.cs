@@ -45,6 +45,7 @@
             this.btnToggleTimer = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,7 +75,7 @@
             this.btnSettings.Location = new System.Drawing.Point(514, 16);
             this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(175, 58);
+            this.btnSettings.Size = new System.Drawing.Size(115, 58);
             this.btnSettings.TabIndex = 1;
             this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = true;
@@ -86,7 +87,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnExit.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnExit.Location = new System.Drawing.Point(669, 19);
+            this.btnExit.Location = new System.Drawing.Point(751, 19);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(175, 53);
@@ -99,6 +100,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnCloseWindow);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnSettings);
@@ -210,6 +212,7 @@
             this.btnToggleTimer.TabIndex = 9;
             this.btnToggleTimer.Text = "Start";
             this.btnToggleTimer.UseVisualStyleBackColor = true;
+            this.btnToggleTimer.Click += new System.EventHandler(this.btnToggleTimer_Click_1);
             // 
             // pictureBox1
             // 
@@ -234,6 +237,20 @@
             this.label2.Size = new System.Drawing.Size(282, 31);
             this.label2.TabIndex = 11;
             this.label2.Text = "Created By Ahmed Magdy";
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(628, 19);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 58);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "New";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // ControlPanel
             // 
@@ -285,5 +302,6 @@
         private Button btnToggleTimer;
         private PictureBox pictureBox1;
         private Label label2;
+        private Button button1;
     }
 }

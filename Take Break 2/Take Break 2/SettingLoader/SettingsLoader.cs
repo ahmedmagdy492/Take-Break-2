@@ -24,7 +24,7 @@ namespace Take_Break_2.SettingLoader
         {
             using (var streamWriter = new StreamWriter(FILE_NAME))
             {
-                streamWriter.WriteLine("{\"Startup\": true, \"TotalSeconds\": 1800, \"WaitingTimeInSeconds\": 900}");
+                streamWriter.WriteLine("{\"Startup\": true, \"TotalSeconds\": 1800, \"WaitingTimeInSeconds\": 900, \"SilentMode\": false}");
             }
         }
 

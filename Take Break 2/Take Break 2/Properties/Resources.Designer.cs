@@ -59,5 +59,14 @@ namespace Take_Break_2.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream takebreak2 {
+            get {
+                return ResourceManager.GetStream("takebreak2", resourceCulture);
+            }
+        }
     }
 }
