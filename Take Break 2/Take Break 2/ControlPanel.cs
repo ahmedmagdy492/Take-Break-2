@@ -37,15 +37,6 @@ namespace Take_Break_2
             countDownTimer.TimeFinish += CountDownTimer_TimeFinish;
             countDownTimer.Start();
             btnToggleTimer.Text = "Stop";
-
-            if(globalSettings.Startup == true)
-            {
-                WindowsApiHelper.AddMeToStartup(Environment.ProcessPath);
-            }
-            else
-            {
-                WindowsApiHelper.RemoveMeFromStartup(Environment.ProcessPath);
-            }
         }
 
         private void CountDownTimer_TimeFinish()

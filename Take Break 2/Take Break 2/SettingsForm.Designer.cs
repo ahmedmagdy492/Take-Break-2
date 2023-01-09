@@ -33,7 +33,6 @@
             this.nmTotalMins = new System.Windows.Forms.NumericUpDown();
             this.nmWaitingTime = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBoxStartup = new System.Windows.Forms.CheckBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(56, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 28);
+            this.label1.Size = new System.Drawing.Size(177, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Alarm Period";
             // 
@@ -66,7 +65,7 @@
             0,
             0});
             this.nmTotalMins.Name = "nmTotalMins";
-            this.nmTotalMins.Size = new System.Drawing.Size(184, 34);
+            this.nmTotalMins.Size = new System.Drawing.Size(184, 40);
             this.nmTotalMins.TabIndex = 1;
             this.nmTotalMins.Value = new decimal(new int[] {
             5,
@@ -88,7 +87,7 @@
             0,
             0});
             this.nmWaitingTime.Name = "nmWaitingTime";
-            this.nmWaitingTime.Size = new System.Drawing.Size(184, 34);
+            this.nmWaitingTime.Size = new System.Drawing.Size(184, 40);
             this.nmWaitingTime.TabIndex = 3;
             this.nmWaitingTime.Value = new decimal(new int[] {
             3,
@@ -101,25 +100,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(56, 153);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 28);
+            this.label2.Size = new System.Drawing.Size(168, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "Wating Time";
             // 
-            // checkBoxStartup
-            // 
-            this.checkBoxStartup.AutoSize = true;
-            this.checkBoxStartup.Checked = true;
-            this.checkBoxStartup.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxStartup.Location = new System.Drawing.Point(56, 233);
-            this.checkBoxStartup.Name = "checkBoxStartup";
-            this.checkBoxStartup.Size = new System.Drawing.Size(235, 32);
-            this.checkBoxStartup.TabIndex = 4;
-            this.checkBoxStartup.Text = "Start with Windows";
-            this.checkBoxStartup.UseVisualStyleBackColor = true;
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(368, 378);
+            this.btnSave.Location = new System.Drawing.Point(344, 314);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(121, 51);
             this.btnSave.TabIndex = 5;
@@ -133,7 +120,7 @@
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(425, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 23);
+            this.label3.Size = new System.Drawing.Size(54, 26);
             this.label3.TabIndex = 6;
             this.label3.Text = "mins";
             // 
@@ -143,16 +130,16 @@
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(425, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 23);
+            this.label4.Size = new System.Drawing.Size(54, 26);
             this.label4.TabIndex = 7;
             this.label4.Text = "mins";
             // 
             // chkBoxEnableSilentMode
             // 
             this.chkBoxEnableSilentMode.AutoSize = true;
-            this.chkBoxEnableSilentMode.Location = new System.Drawing.Point(56, 311);
+            this.chkBoxEnableSilentMode.Location = new System.Drawing.Point(56, 248);
             this.chkBoxEnableSilentMode.Name = "chkBoxEnableSilentMode";
-            this.chkBoxEnableSilentMode.Size = new System.Drawing.Size(232, 32);
+            this.chkBoxEnableSilentMode.Size = new System.Drawing.Size(278, 40);
             this.chkBoxEnableSilentMode.TabIndex = 8;
             this.chkBoxEnableSilentMode.Text = "Enable Silent Mode";
             this.chkBoxEnableSilentMode.UseVisualStyleBackColor = true;
@@ -163,7 +150,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(295, 299);
+            this.button1.Location = new System.Drawing.Point(295, 236);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 58);
@@ -173,16 +160,15 @@
             // 
             // SettingsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(531, 467);
+            this.ClientSize = new System.Drawing.Size(531, 408);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chkBoxEnableSilentMode);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.checkBoxStartup);
             this.Controls.Add(this.nmWaitingTime);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nmTotalMins);
@@ -210,7 +196,6 @@
         private NumericUpDown nmTotalMins;
         private NumericUpDown nmWaitingTime;
         private Label label2;
-        private CheckBox checkBoxStartup;
         private Button btnSave;
         private Label label3;
         private Label label4;

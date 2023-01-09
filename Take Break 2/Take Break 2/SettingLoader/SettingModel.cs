@@ -8,7 +8,6 @@ namespace Take_Break_2.SettingLoader
 {
     public class SettingModel
     {
-        public bool? Startup { get; set; }
         public long? TotalSeconds { get; set; }
         public long? WaitingTimeInSeconds { get; set; }
         public bool? SilentMode { get; set; } = false;
