@@ -17,7 +17,7 @@ namespace Take_Break_2.SettingLoader
 
         public SettingsLoader()
         {
-            FILE_NAME = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "settings.json");
+            FILE_NAME = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "settings.json");
         }
 
         private void CreateFile()

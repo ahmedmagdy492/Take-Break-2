@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj": {}
+    "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj": {}
   },
   "projects": {
-    "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj": {
+    "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
+        "projectUniqueName": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
         "projectName": "Take Break 2",
-        "projectPath": "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
+        "projectPath": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
         "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-        "outputPath": "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2\\obj\\",
+        "outputPath": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",

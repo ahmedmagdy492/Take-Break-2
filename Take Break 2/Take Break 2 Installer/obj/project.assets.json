@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2 Installer\\Take Break 2 Installer.csproj",
+      "projectUniqueName": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2 Installer\\Take Break 2 Installer.csproj",
       "projectName": "Take Break 2 Installer",
-      "projectPath": "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2 Installer\\Take Break 2 Installer.csproj",
+      "projectPath": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2 Installer\\Take Break 2 Installer.csproj",
       "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\Current_Projects\\Take Break 2\\Take Break 2\\Take Break 2 Installer\\obj\\",
+      "outputPath": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2 Installer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
