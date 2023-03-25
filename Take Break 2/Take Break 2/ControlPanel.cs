@@ -45,9 +45,14 @@ namespace Take_Break_2
             var runningProcesses = Process.GetProcesses();
             var execptionProcesses = globalSettings.ListOfProgramsToRunSilentFor;
 
+            execptionProcesses.ForEach(i =>
+            {
+                i = i.ToLower();
+            });
+
             foreach (var process in runningProcesses )
             {
-                if(execptionProcesses.Contains(process.ProcessName))
+                if(execptionProcesses.Contains(process.ProcessName.ToLower()))
                 {
                     return true;
                 }

@@ -28,6 +28,17 @@ namespace Take_Break_2
             nmTotalMins.Value = (decimal)_globalSettings.TotalSeconds / 60;
             nmWaitingTime.Value = (decimal)_globalSettings.WaitingTimeInSeconds / 60;
             chkBoxEnableSilentMode.Checked = _globalSettings.SilentMode ?? false;
+            for(int i =0; i < _globalSettings.ListOfProgramsToRunSilentFor.Count; i++)
+            {
+                if(i < _globalSettings.ListOfProgramsToRunSilentFor.Count-1)
+                {
+                    txtProgramsNames.Text += _globalSettings.ListOfProgramsToRunSilentFor[i] + ",";
+                }
+                else
+                {
+                    txtProgramsNames.Text += _globalSettings.ListOfProgramsToRunSilentFor[i];
+                }
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -48,6 +59,10 @@ namespace Take_Break_2
                             _globalSettings.ListOfProgramsToRunSilentFor.Add(programName);
                         }
                     }
+                }
+                else
+                {
+                    _globalSettings.ListOfProgramsToRunSilentFor.Clear();
                 }
 
                 _settingsLoader.SaveSettings(_globalSettings);
