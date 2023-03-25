@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Take_Break_2.Helpers;
 using Take_Break_2.SettingLoader;
 
@@ -39,16 +40,44 @@ namespace Take_Break_2
             btnToggleTimer.Text = "Stop";
         }
 
+        private bool IsOneOfTheseProcessesAreRunning()
+        {
+            var runningProcesses = Process.GetProcesses();
+            var execptionProcesses = globalSettings.ListOfProgramsToRunSilentFor;
+
+            foreach (var process in runningProcesses )
+            {
+                if(execptionProcesses.Contains(process.ProcessName))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         private void CountDownTimer_TimeFinish()
         {
             if(globalSettings.SilentMode == null || globalSettings.SilentMode == false)
             {
-                PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
-                popupScreen.Show();
-                popupScreen.FormClosed += (sender, e) =>
+                if(IsOneOfTheseProcessesAreRunning())
                 {
+                    var memStream = new MemoryStream();
+                    Properties.Resources.takebreak2.CopyTo(memStream);
+                    var soundBuffer = new SFML.Audio.SoundBuffer(memStream);
+                    var sound = new SFML.Audio.Sound(soundBuffer);
+                    sound.Play();
                     countDownTimer.Start();
-                };
+                }
+                else
+                {
+                    PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
+                    popupScreen.Show();
+                    popupScreen.FormClosed += (sender, e) =>
+                    {
+                        countDownTimer.Start();
+                    };
+                }
             }
             else 
             {

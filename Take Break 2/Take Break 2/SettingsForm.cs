@@ -32,11 +32,23 @@ namespace Take_Break_2
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if(nmTotalMins.Value != 0 && nmWaitingTime.Value != 0)
+            if (nmTotalMins.Value != 0 && nmWaitingTime.Value != 0)
             {
                 _globalSettings.TotalSeconds = (long)nmTotalMins.Value * 60;
                 _globalSettings.WaitingTimeInSeconds = (long)nmWaitingTime.Value * 60;
                 _globalSettings.SilentMode = chkBoxEnableSilentMode.Checked;
+
+                if (!string.IsNullOrWhiteSpace(txtProgramsNames.Text))
+                {
+                    var programsNames = txtProgramsNames.Text.Split(",");
+                    foreach(var programName in programsNames)
+                    {
+                        if(!string.IsNullOrWhiteSpace(programName))
+                        {
+                            _globalSettings.ListOfProgramsToRunSilentFor.Add(programName);
+                        }
+                    }
+                }
 
                 _settingsLoader.SaveSettings(_globalSettings);
                 MessageBox.Show("Changes Saved Successfully and will be applied next time the application runs");
