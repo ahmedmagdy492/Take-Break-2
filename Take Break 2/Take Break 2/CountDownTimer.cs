@@ -23,6 +23,12 @@ namespace Take_Break_2
             InitTimer();
         }
 
+        public void SetTotalSeconds(long totalSeconds)
+        {
+            this.totalSeconds = totalSeconds;
+            this.elapsedSeconds = this.totalSeconds;
+        }
+
         public bool IsStarted { get { return isStarted; } }
 
         private void InitTimer()

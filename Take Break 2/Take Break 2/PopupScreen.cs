@@ -24,7 +24,7 @@ namespace Take_Break_2
 
         private void PopupScreen_Load(object sender, EventArgs e)
         {
-            lblMsg.Location = new Point((this.Width - lblMsg.Width) /2, (this.Height - lblMsg.Height) /2);
+            lblMsg.Location = new Point((this.Width - lblMsg.Width) / 2, (this.Height - lblMsg.Height) / 2);
 
             countDownTimer = new CountDownTimer(_waitingTimeInSeconds);
             countDownTimer.TimeTick += CountDownTimer_TimeTick;
@@ -41,7 +41,7 @@ namespace Take_Break_2
 
         private void CountDownTimer_TimeTick(long timeLeft)
         {
-            lblMsg.Text = $"Please Take break for {_waitingTimeInSeconds/60} mins, the control will get back to you after: " + TimeConverter.ConvertSecondsToReadableFormat(timeLeft);
+            lblMsg.Text = $"Please Take break for {_waitingTimeInSeconds / 60} mins, the control will get back to you after: " + TimeConverter.ConvertSecondsToReadableFormat(timeLeft);
             lblMsg.Location = new Point((this.Width - lblMsg.Width) / 2, (this.Height - lblMsg.Height) / 2);
         }
     }

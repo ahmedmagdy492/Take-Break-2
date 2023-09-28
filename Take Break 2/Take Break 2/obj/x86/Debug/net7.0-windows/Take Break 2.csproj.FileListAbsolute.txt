@@ -1,0 +1,88 @@
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\Take Break 2.exe
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\Take Break 2.dll.config
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\Take Break 2.deps.json
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\Take Break 2.runtimeconfig.json
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\Take Break 2.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\Take Break 2.pdb
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\SFML.Audio.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\SFML.Graphics.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\SFML.System.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\SFML.Window.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libcsfml-audio.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libcsfml-graphics.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libcsfml-system.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libcsfml-window.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-audio.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-audio.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-audio.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-graphics.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-graphics.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-graphics.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-system.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-system.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-system.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-window.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-window.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\alpine-x64\native\libsfml-window.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libcsfml-audio.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libcsfml-graphics.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libcsfml-system.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libcsfml-window.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-audio.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-audio.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-audio.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-graphics.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-graphics.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-graphics.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-system.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-system.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-system.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-window.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-window.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\debian-x64\native\libsfml-window.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libcsfml-audio.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libcsfml-graphics.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libcsfml-system.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libcsfml-window.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-audio.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-audio.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-audio.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-graphics.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-graphics.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-graphics.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-system.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-system.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-system.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-window.so
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-window.so.2.5
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\fedora-x64\native\libsfml-window.so.2.5.1
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x64\native\csfml-Audio.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x64\native\csfml-Graphics.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x64\native\csfml-System.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x64\native\csfml-Window.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x64\native\openal32.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x86\native\csfml-Audio.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x86\native\csfml-Graphics.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x86\native\csfml-System.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x86\native\csfml-Window.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Debug\net7.0-windows\runtimes\win-x86\native\openal32.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.csproj.AssemblyReference.cache
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Interop.AutoItX3Lib.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.csproj.ResolveComReference.cache
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take_Break_2.ControlPanel.resources
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take_Break_2.PopupScreen.resources
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take_Break_2.Properties.Resources.resources
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take_Break_2.SettingsForm.resources
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take_Break_2.SilentModeForm.resources
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.csproj.GenerateResource.cache
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.AssemblyInfoInputs.cache
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.AssemblyInfo.cs
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.csproj.CoreCompileInputs.cache
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.csproj.CopyComplete
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\refint\Take Break 2.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.pdb
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\Take Break 2.genruntimeconfig.cache
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Debug\net7.0-windows\ref\Take Break 2.dll

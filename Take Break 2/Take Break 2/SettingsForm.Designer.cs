@@ -36,10 +36,6 @@
             btnSave = new Button();
             label3 = new Label();
             label4 = new Label();
-            chkBoxEnableSilentMode = new CheckBox();
-            txtProgramsNames = new TextBox();
-            label5 = new Label();
-            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)nmTotalMins).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nmWaitingTime).BeginInit();
             SuspendLayout();
@@ -47,6 +43,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(56, 68);
             label1.Name = "label1";
             label1.Size = new Size(146, 28);
@@ -76,6 +73,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(56, 153);
             label2.Name = "label2";
             label2.Size = new Size(142, 28);
@@ -84,18 +82,23 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(338, 421);
+            btnSave.BackColor = Color.FromArgb(0, 123, 255);
+            btnSave.FlatAppearance.BorderColor = Color.FromArgb(0, 123, 255);
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.ForeColor = Color.White;
+            btnSave.Location = new Point(350, 232);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(121, 51);
             btnSave.TabIndex = 5;
             btnSave.Text = "Save";
-            btnSave.UseVisualStyleBackColor = true;
+            btnSave.UseVisualStyleBackColor = false;
             btnSave.Click += btnSave_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Trebuchet MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(425, 75);
             label3.Name = "label3";
             label3.Size = new Size(46, 23);
@@ -106,59 +109,19 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Trebuchet MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(425, 158);
             label4.Name = "label4";
             label4.Size = new Size(46, 23);
             label4.TabIndex = 7;
             label4.Text = "mins";
             // 
-            // chkBoxEnableSilentMode
-            // 
-            chkBoxEnableSilentMode.AutoSize = true;
-            chkBoxEnableSilentMode.Location = new Point(63, 355);
-            chkBoxEnableSilentMode.Name = "chkBoxEnableSilentMode";
-            chkBoxEnableSilentMode.Size = new Size(232, 32);
-            chkBoxEnableSilentMode.TabIndex = 8;
-            chkBoxEnableSilentMode.Text = "Enable Silent Mode";
-            chkBoxEnableSilentMode.UseVisualStyleBackColor = true;
-            // 
-            // txtProgramsNames
-            // 
-            txtProgramsNames.Location = new Point(56, 244);
-            txtProgramsNames.Multiline = true;
-            txtProgramsNames.Name = "txtProgramsNames";
-            txtProgramsNames.Size = new Size(403, 87);
-            txtProgramsNames.TabIndex = 9;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(60, 213);
-            label5.Name = "label5";
-            label5.Size = new Size(181, 28);
-            label5.TabIndex = 10;
-            label5.Text = "Programs Names";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Trebuchet MS", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(241, 217);
-            label6.Name = "label6";
-            label6.Size = new Size(248, 24);
-            label6.TabIndex = 11;
-            label6.Text = "names seperated by comma";
-            // 
             // SettingsForm
             // 
             AutoScaleDimensions = new SizeF(13F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(531, 506);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(txtProgramsNames);
-            Controls.Add(chkBoxEnableSilentMode);
+            BackColor = Color.White;
+            ClientSize = new Size(531, 334);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(btnSave);
@@ -167,7 +130,7 @@
             Controls.Add(nmTotalMins);
             Controls.Add(label1);
             Font = new Font("Trebuchet MS", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            ForeColor = Color.SeaGreen;
+            ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(5, 4, 5, 4);
@@ -191,9 +154,5 @@
         private Button btnSave;
         private Label label3;
         private Label label4;
-        private CheckBox chkBoxEnableSilentMode;
-        private TextBox txtProgramsNames;
-        private Label label5;
-        private Label label6;
     }
 }

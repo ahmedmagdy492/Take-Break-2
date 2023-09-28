@@ -170,3 +170,5 @@ D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-wi
 D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.pdb
 D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.genruntimeconfig.cache
 D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\ref\Take Break 2.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Interop.AutoItX3Lib.dll
+D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Take Break 2.csproj.ResolveComReference.cache

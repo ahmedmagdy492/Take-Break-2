@@ -5,22 +5,32 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Take Break 2", "Take Break 2\Take Break 2.csproj", "{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Take Break 2 Installer", "Take Break 2 Installer\Take Break 2 Installer.csproj", "{7CFE3F48-2C46-4D81-9140-72B32EE64027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Take Break 2 Installer", "Take Break 2 Installer\Take Break 2 Installer.csproj", "{7CFE3F48-2C46-4D81-9140-72B32EE64027}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}.Debug|x86.ActiveCfg = Debug|x86
+		{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}.Debug|x86.Build.0 = Debug|x86
 		{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}.Release|x86.ActiveCfg = Release|x86
+		{F226BAFC-2C75-4B2A-8365-0A6DE6642F63}.Release|x86.Build.0 = Release|x86
 		{7CFE3F48-2C46-4D81-9140-72B32EE64027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7CFE3F48-2C46-4D81-9140-72B32EE64027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFE3F48-2C46-4D81-9140-72B32EE64027}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CFE3F48-2C46-4D81-9140-72B32EE64027}.Debug|x86.Build.0 = Debug|Any CPU
 		{7CFE3F48-2C46-4D81-9140-72B32EE64027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CFE3F48-2C46-4D81-9140-72B32EE64027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFE3F48-2C46-4D81-9140-72B32EE64027}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CFE3F48-2C46-4D81-9140-72B32EE64027}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

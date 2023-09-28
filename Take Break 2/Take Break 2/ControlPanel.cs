@@ -1,3 +1,4 @@
+using AutoItX3Lib;
 using System.Diagnostics;
 using Take_Break_2.Helpers;
 using Take_Break_2.SettingLoader;
@@ -23,7 +24,22 @@ namespace Take_Break_2
         private void btnSettings_Click(object sender, EventArgs e)
         {
             SettingsForm settingsForm = new SettingsForm();
+            settingsForm.FormClosed += SettingsForm_FormClosed;
             settingsForm.ShowDialog();
+        }
+
+        private void SettingsForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            SettingsLoader settingsLoader = new SettingsLoader();
+            globalSettings = settingsLoader.LoadSettings();
+
+            countDownTimer.SetTotalSeconds(globalSettings.TotalSeconds ?? 1800);
+            btnToggleTimer.Text = "Stop";
+        }
+
+        private void AlignControls()
+        {
+            panel1.Location = new Point((this.Width - panel1.Width) / 2, (this.Height - panel1.Height) / 2);
         }
 
         private void ControlPanel_Load(object sender, EventArgs e)
@@ -38,6 +54,22 @@ namespace Take_Break_2
             countDownTimer.TimeFinish += CountDownTimer_TimeFinish;
             countDownTimer.Start();
             btnToggleTimer.Text = "Stop";
+
+            AlignControls();
+        }
+
+        private bool IsThereAWindowInFullScreen()
+        {
+            var autoIt = new AutoItX3();
+            int windowWidth = autoIt.WinGetPosWidth("[ACTIVE]");
+            int windowHeight = autoIt.WinGetPosHeight("[ACTIVE]");
+
+            if (windowWidth == Screen.PrimaryScreen.Bounds.Width && windowHeight == Screen.PrimaryScreen.Bounds.Height)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         private bool IsOneOfTheseProcessesAreRunning()
@@ -50,9 +82,9 @@ namespace Take_Break_2
                 i = i.ToLower();
             });
 
-            foreach (var process in runningProcesses )
+            foreach (var process in runningProcesses)
             {
-                if(execptionProcesses.Contains(process.ProcessName.ToLower()))
+                if (execptionProcesses.Contains(process.ProcessName.ToLower()))
                 {
                     return true;
                 }
@@ -63,41 +95,23 @@ namespace Take_Break_2
 
         private void CountDownTimer_TimeFinish()
         {
-            if(globalSettings.SilentMode == null || globalSettings.SilentMode == false)
+            if (IsThereAWindowInFullScreen())
             {
-                if(IsOneOfTheseProcessesAreRunning())
-                {
-                    var memStream = new MemoryStream();
-                    Properties.Resources.takebreak2.CopyTo(memStream);
-                    var soundBuffer = new SFML.Audio.SoundBuffer(memStream);
-                    var sound = new SFML.Audio.Sound(soundBuffer);
-                    sound.Play();
-                    countDownTimer.Start();
-                }
-                else
-                {
-                    PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
-                    popupScreen.Show();
-                    popupScreen.FormClosed += (sender, e) =>
-                    {
-                        countDownTimer.Start();
-                    };
-                }
-            }
-            else 
-            {
-                //SilentModeForm silentModeForm = new SilentModeForm();
-                //silentModeForm.Show();
-                //silentModeForm.FormClosed += (sender, e) =>
-                //{
-                //    countDownTimer.Start();
-                //};
                 var memStream = new MemoryStream();
                 Properties.Resources.takebreak2.CopyTo(memStream);
                 var soundBuffer = new SFML.Audio.SoundBuffer(memStream);
                 var sound = new SFML.Audio.Sound(soundBuffer);
                 sound.Play();
                 countDownTimer.Start();
+            }
+            else
+            {
+                PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
+                popupScreen.Show();
+                popupScreen.FormClosed += (sender, e) =>
+                {
+                    countDownTimer.Start();
+                };
             }
         }
 

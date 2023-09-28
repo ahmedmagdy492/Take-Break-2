@@ -27,18 +27,6 @@ namespace Take_Break_2
             _globalSettings = _settingsLoader.LoadSettings();
             nmTotalMins.Value = (decimal)_globalSettings.TotalSeconds / 60;
             nmWaitingTime.Value = (decimal)_globalSettings.WaitingTimeInSeconds / 60;
-            chkBoxEnableSilentMode.Checked = _globalSettings.SilentMode ?? false;
-            for(int i =0; i < _globalSettings.ListOfProgramsToRunSilentFor.Count; i++)
-            {
-                if(i < _globalSettings.ListOfProgramsToRunSilentFor.Count-1)
-                {
-                    txtProgramsNames.Text += _globalSettings.ListOfProgramsToRunSilentFor[i] + ",";
-                }
-                else
-                {
-                    txtProgramsNames.Text += _globalSettings.ListOfProgramsToRunSilentFor[i];
-                }
-            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -47,26 +35,9 @@ namespace Take_Break_2
             {
                 _globalSettings.TotalSeconds = (long)nmTotalMins.Value * 60;
                 _globalSettings.WaitingTimeInSeconds = (long)nmWaitingTime.Value * 60;
-                _globalSettings.SilentMode = chkBoxEnableSilentMode.Checked;
-
-                if (!string.IsNullOrWhiteSpace(txtProgramsNames.Text))
-                {
-                    var programsNames = txtProgramsNames.Text.Split(",");
-                    foreach(var programName in programsNames)
-                    {
-                        if(!string.IsNullOrWhiteSpace(programName))
-                        {
-                            _globalSettings.ListOfProgramsToRunSilentFor.Add(programName);
-                        }
-                    }
-                }
-                else
-                {
-                    _globalSettings.ListOfProgramsToRunSilentFor.Clear();
-                }
 
                 _settingsLoader.SaveSettings(_globalSettings);
-                MessageBox.Show("Changes Saved Successfully and will be applied next time the application runs");
+                MessageBox.Show("Changes Saved Successfully");
                 this.Close();
             }
         }
