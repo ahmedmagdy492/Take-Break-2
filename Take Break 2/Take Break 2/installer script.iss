@@ -25,9 +25,9 @@ DefaultDirName={autopf}\Take Break 3
 DisableDirPage=yes
 ChangesAssociations=yes
 DisableProgramGroupPage=yes
-InfoBeforeFile=D:\Current Projects\Take Break 2\Take Break 2\Info.txt
+InfoBeforeFile=D:\Dev\Projects\Take Break 2\Take Break 2\Info.txt
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
-;PrivilegesRequired=lowest
+PrivilegesRequired=admin
 OutputDir=C:\Users\Ahmed\Desktop
 OutputBaseFilename=Take Break Installer
 Compression=lzma
@@ -44,18 +44,19 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: {app}\runtimes\
 
 [Files]
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\SFML.Audio.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\SFML.Graphics.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\SFML.System.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\SFML.Window.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.deps.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.dll.config"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.pdb"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Current Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\runtimes\*"; DestDir: "{app}\runtimes\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\SFML.Audio.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\SFML.Graphics.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\SFML.System.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\SFML.Window.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.deps.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.dll.config"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Interop.AutoItX3Lib.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\runtimes\*"; DestDir: "{app}\runtimes\"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
@@ -68,6 +69,7 @@ Root: HKA; Subkey: "Software\Classes\Applications\{#MyAppExeName}\SupportedTypes
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
+Name: "{commonstartup}\{#MyAppName}"; Filename: "{app}\{#MyAppName}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
