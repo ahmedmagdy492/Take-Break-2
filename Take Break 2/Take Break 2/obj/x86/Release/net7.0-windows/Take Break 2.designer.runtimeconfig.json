@@ -13,11 +13,11 @@
     ],
     "additionalProbingPaths": [
       "C:\\Users\\Ahmed\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Ahmed\\.nuget\\packages",
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "C:\\Users\\Ahmed\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }

@@ -127,9 +127,9 @@ namespace Take_Break_2
         private void ControlPanel_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
-            notifyIcon1.Text = "Take break 2";
+            notifyIcon1.Text = "Take break";
             notifyIcon1.Icon = this.Icon;
-            notifyIcon1.ShowBalloonTip(1000, "Take break 2", "Take break 2 is working in the background", ToolTipIcon.Info);
+            notifyIcon1.ShowBalloonTip(1000, "Take break", "Take break is working in the background", ToolTipIcon.Info);
             isHidden = true;
             this.Hide();
         }
