@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj": {}
+    "D:\\Dev\\Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj": {}
   },
   "projects": {
-    "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj": {
+    "D:\\Dev\\Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
+        "projectUniqueName": "D:\\Dev\\Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
         "projectName": "Take Break 2",
-        "projectPath": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
+        "projectPath": "D:\\Dev\\Projects\\Take Break 2\\Take Break 2\\Take Break 2\\Take Break 2.csproj",
         "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-        "outputPath": "D:\\Current Projects\\Take Break 2\\Take Break 2\\Take Break 2\\obj\\",
+        "outputPath": "D:\\Dev\\Projects\\Take Break 2\\Take Break 2\\Take Break 2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -71,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

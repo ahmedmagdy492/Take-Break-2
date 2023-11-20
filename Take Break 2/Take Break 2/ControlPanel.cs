@@ -9,6 +9,7 @@ namespace Take_Break_2
     {
         private SettingModel globalSettings;
         private CountDownTimer countDownTimer;
+        private bool isHidden = false;
 
         public ControlPanel()
         {
@@ -117,7 +118,10 @@ namespace Take_Break_2
 
         private void CountDownTimer_TimeTick(long elapsedSeconds)
         {
-            lblTimeLeft.Text = TimeConverter.ConvertSecondsToReadableFormat(elapsedSeconds);
+            if(!isHidden)
+            {
+                lblTimeLeft.Text = TimeConverter.ConvertSecondsToReadableFormat(elapsedSeconds);
+            }
         }
 
         private void ControlPanel_FormClosing(object sender, FormClosingEventArgs e)
@@ -126,11 +130,13 @@ namespace Take_Break_2
             notifyIcon1.Text = "Take break 2";
             notifyIcon1.Icon = this.Icon;
             notifyIcon1.ShowBalloonTip(1000, "Take break 2", "Take break 2 is working in the background", ToolTipIcon.Info);
+            isHidden = true;
             this.Hide();
         }
 
         private void showWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            isHidden = false;
             this.Show();
         }
 
