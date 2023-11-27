@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Take Break"
-#define MyAppVersion "3.0"
+#define MyAppVersion "3.2"
 #define MyAppPublisher "Ahmed Magdy"
 #define MyAppURL "https://ahmedmagdy492.github.io"
 #define MyAppExeName "Take Break 3.exe"
@@ -69,7 +69,7 @@ Root: HKA; Subkey: "Software\Classes\Applications\{#MyAppExeName}\SupportedTypes
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
-Name: "{commonstartup}\{#MyAppName}"; Filename: "{app}\{#MyAppName}"
+Name: "{commonstartup}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]

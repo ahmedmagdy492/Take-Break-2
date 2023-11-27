@@ -131,12 +131,14 @@ namespace Take_Break_2
             notifyIcon1.Icon = this.Icon;
             notifyIcon1.ShowBalloonTip(1000, "Take break", "Take break is working in the background", ToolTipIcon.Info);
             isHidden = true;
+            this.SuspendLayout();
             this.Hide();
         }
 
         private void showWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
             isHidden = false;
+            this.ResumeLayout();
             this.Show();
         }
 
@@ -153,6 +155,8 @@ namespace Take_Break_2
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            this.isHidden = false;
+            this.ResumeLayout();
             this.Show();
         }
 

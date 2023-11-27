@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Take Break 2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b55a6d7a38fbaf9e7c0a79f23dd1be3530659262")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cf43b018c9b089d97e0fa081af17fd517a44ab2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Take Break 2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Take Break 2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
