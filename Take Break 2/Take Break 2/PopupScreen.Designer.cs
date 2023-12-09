@@ -35,6 +35,7 @@
             // 
             lblMsg.AutoSize = true;
             lblMsg.Location = new Point(457, 256);
+            lblMsg.MaximumSize = new Size(600, 0);
             lblMsg.Name = "lblMsg";
             lblMsg.Size = new Size(250, 38);
             lblMsg.TabIndex = 0;

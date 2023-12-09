@@ -96,14 +96,26 @@ namespace Take_Break_2
 
         private void CountDownTimer_TimeFinish()
         {
-            if (IsThereAWindowInFullScreen())
+            if(WindowsApiHelper.CheckIfProgramInstalledOnTheSystem("AutoIt"))
             {
-                var memStream = new MemoryStream();
-                Properties.Resources.takebreak2.CopyTo(memStream);
-                var soundBuffer = new SFML.Audio.SoundBuffer(memStream);
-                var sound = new SFML.Audio.Sound(soundBuffer);
-                sound.Play();
-                countDownTimer.Start();
+                if (IsThereAWindowInFullScreen())
+                {
+                    var memStream = new MemoryStream();
+                    Properties.Resources.takebreak2.CopyTo(memStream);
+                    var soundBuffer = new SFML.Audio.SoundBuffer(memStream);
+                    var sound = new SFML.Audio.Sound(soundBuffer);
+                    sound.Play();
+                    countDownTimer.Start();
+                }
+                else
+                {
+                    PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
+                    popupScreen.Show();
+                    popupScreen.FormClosed += (sender, e) =>
+                    {
+                        countDownTimer.Start();
+                    };
+                }
             }
             else
             {

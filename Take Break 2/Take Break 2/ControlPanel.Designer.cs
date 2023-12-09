@@ -62,19 +62,19 @@
             contextMenuStrip1.ImageScalingSize = new Size(20, 20);
             contextMenuStrip1.Items.AddRange(new ToolStripItem[] { showWindowToolStripMenuItem, exitToolStripMenuItem });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(211, 68);
+            contextMenuStrip1.Size = new Size(174, 52);
             // 
             // showWindowToolStripMenuItem
             // 
             showWindowToolStripMenuItem.Name = "showWindowToolStripMenuItem";
-            showWindowToolStripMenuItem.Size = new Size(210, 32);
+            showWindowToolStripMenuItem.Size = new Size(173, 24);
             showWindowToolStripMenuItem.Text = "Show Window";
             showWindowToolStripMenuItem.Click += showWindowToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(210, 32);
+            exitToolStripMenuItem.Size = new Size(173, 24);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 

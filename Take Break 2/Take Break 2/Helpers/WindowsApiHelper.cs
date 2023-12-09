@@ -57,5 +57,28 @@ namespace Take_Break_2.Helpers
 
             rk.DeleteValue(APP_NAME, false);
         }
+
+        public static bool CheckIfProgramInstalledOnTheSystem(string programName)
+        {
+            string registry_key = @"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall";
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(registry_key))
+            {
+                foreach (string subkey_name in key.GetSubKeyNames())
+                {
+                    using (RegistryKey subkey = key.OpenSubKey(subkey_name))
+                    {
+                        if (subkey.GetValue("DisplayName") != null)
+                        {
+                            if (subkey.GetValue("DisplayName").ToString().ToLower().Contains(programName.ToLower()))
+                            {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return false;
+        }
     }
 }
