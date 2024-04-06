@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Take Break"
-#define MyAppVersion "3.3"
+#define MyAppVersion "3.4"
 #define MyAppPublisher "Ahmed Magdy"
 #define MyAppURL "https://ahmedmagdy492.github.io"
 #define MyAppExeName "Take Break 3.exe"
@@ -55,7 +55,6 @@ Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\
 Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.dll.config"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.pdb"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\Take Break 2.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\Release\net7.0-windows\Interop.AutoItX3Lib.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\runtimes\*"; DestDir: "{app}\runtimes\"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
