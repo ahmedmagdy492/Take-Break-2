@@ -34,7 +34,7 @@
             // lblMsg
             // 
             lblMsg.AutoSize = true;
-            lblMsg.Location = new Point(457, 256);
+            lblMsg.Location = new Point(116, 93);
             lblMsg.MaximumSize = new Size(600, 0);
             lblMsg.Name = "lblMsg";
             lblMsg.Size = new Size(250, 38);
@@ -45,11 +45,11 @@
             // 
             AutoScaleDimensions = new SizeF(16F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(1164, 551);
+            BackColor = Color.White;
+            ClientSize = new Size(482, 225);
             Controls.Add(lblMsg);
             Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            ForeColor = Color.White;
+            ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6);
             MaximizeBox = false;
@@ -57,10 +57,9 @@
             Name = "PopupScreen";
             ShowIcon = false;
             ShowInTaskbar = false;
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "PopupScreen";
+            StartPosition = FormStartPosition.Manual;
+            Text = "Take Break";
             TopMost = true;
-            WindowState = FormWindowState.Maximized;
             Load += PopupScreen_Load;
             ResumeLayout(false);
             PerformLayout();

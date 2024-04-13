@@ -127,24 +127,19 @@ public partial class ControlPanel : Form
     {
         if(WindowsApiHelper.CheckIfProgramInstalledOnTheSystem("AutoIt"))
         {
-            if (IsThereAWindowInFullScreen())
+            var memStream = new MemoryStream();
+            Properties.Resources.takebreak2.CopyTo(memStream);
+            var soundBuffer = new SFML.Audio.SoundBuffer(memStream);
+            var sound = new SFML.Audio.Sound(soundBuffer);
+            sound.Play();
+            countDownTimer.Start();
+
+            PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
+            popupScreen.Show();
+            popupScreen.FormClosed += (sender, e) =>
             {
-                var memStream = new MemoryStream();
-                Properties.Resources.takebreak2.CopyTo(memStream);
-                var soundBuffer = new SFML.Audio.SoundBuffer(memStream);
-                var sound = new SFML.Audio.Sound(soundBuffer);
-                sound.Play();
                 countDownTimer.Start();
-            }
-            else
-            {
-                PopupScreen popupScreen = new PopupScreen(globalSettings.WaitingTimeInSeconds ?? 900);
-                popupScreen.Show();
-                popupScreen.FormClosed += (sender, e) =>
-                {
-                    countDownTimer.Start();
-                };
-            }
+            };
         }
         else
         {

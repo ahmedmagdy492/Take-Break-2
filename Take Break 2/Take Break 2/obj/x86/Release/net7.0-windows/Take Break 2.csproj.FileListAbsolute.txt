@@ -156,8 +156,6 @@ D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-wi
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\runtimes\win-x86\native\csfml-Window.dll
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\bin\x86\Release\net7.0-windows\runtimes\win-x86\native\openal32.dll
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Break 2.csproj.AssemblyReference.cache
-D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Interop.AutoItX3Lib.dll
-D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Break 2.csproj.ResolveComReference.cache
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take_Break_2.ControlPanel.resources
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take_Break_2.PopupScreen.resources
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take_Break_2.Properties.Resources.resources
@@ -169,9 +167,9 @@ D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-wi
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Break 2.AssemblyInfo.cs
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Break 2.csproj.CoreCompileInputs.cache
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Break 2.sourcelink.json
+D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Bre.EAC808C4.Up2Date
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Break 2.dll
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\refint\Take Break 2.dll
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Break 2.pdb
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Break 2.genruntimeconfig.cache
 D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\ref\Take Break 2.dll
-D:\Dev\Projects\Take Break 2\Take Break 2\Take Break 2\obj\x86\Release\net7.0-windows\Take Bre.EAC808C4.Up2Date
