@@ -29,22 +29,18 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlPanel));
+            var resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlPanel));
             notifyIcon1 = new NotifyIcon(components);
             contextMenuStrip1 = new ContextMenuStrip(components);
             showWindowToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
-            label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             btnSettings = new Button();
             btnExit = new Button();
-            panel1 = new Panel();
-            lblTimerLabel = new Label();
             lblTimeLeft = new Label();
             btnToggleTimer = new Button();
             contextMenuStrip1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // notifyIcon1
@@ -78,27 +74,14 @@
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(15, 111);
-            label2.Margin = new Padding(69, 65, 69, 65);
-            label2.Name = "label2";
-            label2.Size = new Size(282, 31);
-            label2.TabIndex = 11;
-            label2.Text = "Created By Ahmed Magdy";
-            // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
             flowLayoutPanel1.Controls.Add(btnSettings);
             flowLayoutPanel1.Controls.Add(btnExit);
             flowLayoutPanel1.Dock = DockStyle.Top;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(714, 77);
+            flowLayoutPanel1.Size = new Size(714, 57);
             flowLayoutPanel1.TabIndex = 12;
             // 
             // btnSettings
@@ -106,11 +89,11 @@
             btnSettings.FlatAppearance.BorderSize = 0;
             btnSettings.FlatStyle = FlatStyle.Flat;
             btnSettings.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSettings.ForeColor = Color.Black;
+            btnSettings.ForeColor = Color.White;
             btnSettings.Location = new Point(4, 4);
             btnSettings.Margin = new Padding(4);
             btnSettings.Name = "btnSettings";
-            btnSettings.Size = new Size(115, 58);
+            btnSettings.Size = new Size(115, 48);
             btnSettings.TabIndex = 4;
             btnSettings.Text = "Settings";
             btnSettings.UseVisualStyleBackColor = true;
@@ -126,44 +109,22 @@
             btnExit.Location = new Point(127, 4);
             btnExit.Margin = new Padding(4);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(120, 58);
+            btnExit.Size = new Size(82, 48);
             btnExit.TabIndex = 6;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(lblTimerLabel);
-            panel1.Controls.Add(lblTimeLeft);
-            panel1.Controls.Add(btnToggleTimer);
-            panel1.Location = new Point(174, 260);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(351, 276);
-            panel1.TabIndex = 13;
-            // 
-            // lblTimerLabel
-            // 
-            lblTimerLabel.AutoSize = true;
-            lblTimerLabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTimerLabel.ForeColor = Color.Black;
-            lblTimerLabel.Location = new Point(121, 12);
-            lblTimerLabel.Margin = new Padding(69, 65, 69, 65);
-            lblTimerLabel.Name = "lblTimerLabel";
-            lblTimerLabel.Size = new Size(115, 31);
-            lblTimerLabel.TabIndex = 10;
-            lblTimerLabel.Text = "Time Left";
-            // 
             // lblTimeLeft
             // 
             lblTimeLeft.AutoSize = true;
-            lblTimeLeft.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTimeLeft.ForeColor = Color.Black;
-            lblTimeLeft.Location = new Point(132, 87);
+            lblTimeLeft.Font = new Font("Segoe UI", 38F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTimeLeft.ForeColor = Color.White;
+            lblTimeLeft.Location = new Point(211, 99);
             lblTimeLeft.Margin = new Padding(69, 65, 69, 65);
             lblTimeLeft.Name = "lblTimeLeft";
-            lblTimeLeft.Size = new Size(104, 31);
-            lblTimeLeft.TabIndex = 11;
+            lblTimeLeft.Size = new Size(293, 86);
+            lblTimeLeft.TabIndex = 13;
             lblTimeLeft.Text = "00:00:00";
             // 
             // btnToggleTimer
@@ -172,25 +133,24 @@
             btnToggleTimer.FlatStyle = FlatStyle.Flat;
             btnToggleTimer.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnToggleTimer.ForeColor = Color.White;
-            btnToggleTimer.Location = new Point(10, 155);
+            btnToggleTimer.Location = new Point(312, 197);
             btnToggleTimer.Margin = new Padding(34, 32, 34, 32);
             btnToggleTimer.Name = "btnToggleTimer";
-            btnToggleTimer.Size = new Size(330, 103);
-            btnToggleTimer.TabIndex = 12;
+            btnToggleTimer.Size = new Size(90, 63);
+            btnToggleTimer.TabIndex = 14;
             btnToggleTimer.Text = "Start";
             btnToggleTimer.UseVisualStyleBackColor = false;
-            btnToggleTimer.Click += btnToggleTimer_Click_1;
             // 
             // ControlPanel
             // 
             AutoScaleDimensions = new SizeF(11F, 26F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.DarkBlue;
             BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(714, 576);
-            Controls.Add(panel1);
+            ClientSize = new Size(714, 320);
+            Controls.Add(lblTimeLeft);
+            Controls.Add(btnToggleTimer);
             Controls.Add(flowLayoutPanel1);
-            Controls.Add(label2);
             DoubleBuffered = true;
             Font = new Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.RosyBrown;
@@ -205,8 +165,6 @@
             Load += ControlPanel_Load;
             contextMenuStrip1.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -216,12 +174,9 @@
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem showWindowToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
-        private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
         private Button btnExit;
         private Button btnSettings;
-        private Panel panel1;
-        private Label lblTimerLabel;
         private Label lblTimeLeft;
         private Button btnToggleTimer;
     }

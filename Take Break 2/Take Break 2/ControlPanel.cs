@@ -57,7 +57,8 @@ public partial class ControlPanel : Form
 
     private void AlignControls()
     {
-        panel1.Location = new Point((this.Width - panel1.Width) / 2, (this.Height - panel1.Height) / 2);
+        lblTimeLeft.Location = new Point((Width - lblTimeLeft.Width)/2, flowLayoutPanel1.Height + 30);
+        btnToggleTimer.Location = new Point((Width - btnToggleTimer.Width)/2, lblTimeLeft.Location.Y + lblTimeLeft.Height + 10);
     }
 
     private void ControlPanel_Load(object sender, EventArgs e)
@@ -157,6 +158,7 @@ public partial class ControlPanel : Form
         if(!isHidden)
         {
             lblTimeLeft.Text = TimeConverter.ConvertSecondsToReadableFormat(elapsedSeconds);
+            AlignControls();
         }
     }
 
